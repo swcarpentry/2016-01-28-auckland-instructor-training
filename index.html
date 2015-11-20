@@ -1,20 +1,21 @@
 ---
 layout: workshop
 root: .
-venue: University of FIXME      # brief name of host site without address (e.g., "Euphoric State University")
+venue: University of Auckland      # brief name of host site without address (e.g., "Euphoric State University")
 address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+country: nz    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: en   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-trainer: FIXME    # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+humandate: Jan 28-29, 2016  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: 9:00 am - 5:00 pm  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-01-28  # use YYYY-MM-DD format like "2015-01-01"
+enddate: 2016-01-29    # use YYYY-MM-DD format like" 2015-01-02"
+trainer: ["Aleksandra Pawlik", "John Rugis"]    # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: FIXME     # list of names like above
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+contact: training-help@software-carpentry.org    # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad: http://pad.software-carpentry.org/2016-01-28-Auckland-Instructor-Training        # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+prep-repository: https://github.com/carpentry-instructor-training/2016-01-28-training-prep  # optional (insert the URL to the repository for the preparation PR exercise
 ---
 <!--
   HEADER
@@ -203,7 +204,7 @@ and we will not be teaching that.This workshop is based on the constantly revise
 <hr/>
 
 <!--
-  SYLLABUS
+  Syllabus
 
   Show what topics will be covered.
 
@@ -236,55 +237,63 @@ and we will not be teaching that.This workshop is based on the constantly revise
 
 
 <h2 id="preparation" name="preparation">Preparation</h2>
+<p>In preparation for the training we would like to ask you to:
+  <ol>
+     <li> Watch one of the following videos from Software Carpentry workshops 
+     <a href="https://vimeo.com/139316669">https://vimeo.com/139316669</a>   
+     <strong> or</strong> <a href="https://vimeo.com/139181120">https://vimeo.com/139181120</a>
+     and put a 3-4 sentences feedback to <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+     </li>
+     <li> Complete a small task:
+      <ul>
+       <li> If you want to teach Software Carpentry, please submit a small pull request to
+            <a href="{{page.prep-repository}}">this repository</a>
+            Your pull request should contain one file (and one file only) called "your_name.txt" 
+            (e.g., marie_curie.txt or alan_turing.txt). This file should contain a sentence or 
+            two that describes the type of work you do. You will submit the name of this file 
+            as part of your application. <br/>
+            Help on creating pull requests can be found at <a href="https://help.github.com/articles/using-pull-requests/">
+            https://help.github.com/articles/using-pull-requests</a>.
+            If you need assistance, please mail training-help@software-carpentry.org.
+       </li>
+       <li>
+            If you want to teach <strong>only</strong> Data Carpentry, please propose a short exercise for 
+            <a href="http://www.datacarpentry.org/lessons/">the existing lessons</a>
+            by submitting it via <a href="http://goo.gl/forms/YRw2LHYnVo">this form</a>. 
+       </li>
+      </ul>
+     </li>
+     <li>
+        Read:
+	<ul>
+          <li><a href="http://files.software-carpentry.org/training-course/2013/08/p34-porter.pdf">
+              Porter et al's "Success in Introductory Programming: What Works?"</a> 
+              , which is a good recent summary of results specific to teaching programming.</li>
+	  <li><a href="http://files.software-carpentry.org/training-course/2012/08/guzdial.pdf">
+             Mark Guzdial's "Top 10 Myths About Teaching Computer Science",</a> 
+             which is a nice overview of things that are not true, but are widely believed</li>
+        </ul>
+     </li>
+     
+  </ol>
+</p>
+
+
+<p> If you are interested in doing more reading:
 <ol>
-    <li>Please read <a target="_blank"
-                       href="http://files.software-carpentry.org/training-course/2013/08/p34-porter.pdf">Porter et al's  "Success
-        in Introductory Programming: What Works?"</a>,
-        which is a good recent summary of results specific to teaching programming, and <a target="_blank"
-                                                                                           href="http://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext">Mark
-            Guzdial's "Top 10 Myths About Teaching Computer Science"</a>,
-        which is a nice overview of things that <em>are not</em> true, but are widely believed.
-    </li>
-
-    <li>Please also pick up a copy of <a target="_blank"
-                                         href="http://www.amazon.com/How-Learning-Works-Research-Based-Jossey-Bass/dp/0470484101/">"How
-        Learning Works"</a>, which is the best summary
-        going of research in education. It is full of useful insights, and a lot of how we teach is based on the
-        findings
-        it reports.
-
-    <li>Finally, please go to <a target="_blank" href=" http://software-carpentry.org/lessons.html">Software Carpentry's
-        lessons page</a> and browse the lessons to see what
-        is currently taught in Software Carpentry.
-
-    <li>If you are interested in doing more reading, <a target="_blank"
-                                                        href="http://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674066170">Huston's
+    <li><a target="_blank"href="http://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674066170">Huston's
         "Teaching What You Don't Know"</a> is a lot of fun - many will recognize themselves in these
-        stories. Past participants have also enjoyed <a target="_blank"
-                                                        href="http://www.amazon.com/Building-Better-Teacher-Teaching-Everyone/dp/0393081591">"Building
-            a Better Teacher"</a>, which is a well-written look at
-        why educational reforms in the past 50 years have mostly failed, and about what we should be doing instead.
-    </li>
-</ol>
-
-
-<h2>Selected reference and training materials</h2>
-
-<ul>
-    <li><a target="_blank"
-           href="http://files.software-carpentry.org/training-course/2013/08/p34-porter.pdf">Porter et al's "Success in
-        Introductory Programming: What Works?"</a></li>
-    <li><a target="_blank"
-           href="http://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext">Mark
-        Guzdial's "Top 10 Myths About Teaching Computer Science"</a></li>
+        stories.</li>
+    <li> <a target="_blank"href="http://www.amazon.com/Building-Better-Teacher-Teaching-Everyone/dp/0393081591">"Building
+            a Better Teacher"</a>, is a well-written look at
+        why educational reforms in the past 50 years have mostly failed, and about what we should be doing instead.</li>
     <li><a target="_blank"
            href="http://www.amazon.com/How-Learning-Works-Research-Based-Jossey-Bass/dp/0470484101/">Susan A. Ambrose's "How
-        Learning Works"</a></li>
-    <li><a target="_blank"
-           href="http://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674066170">Huston's
-        "Teaching What You Don't Know"</a></li>
-    <li><a target="_blank"
-           href="http://www.amazon.com/Building-Better-Teacher-Teaching-Everyone/dp/0393081591">Elisabeth Green's "Building
-        a Better Teacher"</a></li>
-</ul>
+        Learning Works"</a> is the best summary going of research in education. 
+        It is full of useful insights, and a lot of how we teach is based on the findings it reports.</li> 
+
+</ol>
+</p>
+
+
 
