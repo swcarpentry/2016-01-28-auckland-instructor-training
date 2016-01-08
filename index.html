@@ -17,6 +17,7 @@ etherpad:         # optional (insert the URL for your Etherpad if you're using o
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 prep-repository:  # optional (insert the URL for the repository where the trainees are supposed to submit the PR 
 ---
+
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -124,7 +125,7 @@ prep-repository:  # optional (insert the URL for the repository where the traine
       <tr> <td>09:00</td> <td>Recap and homework review<br></td> </tr>
       <tr> <td>09:45</td> <td>Live coding and active learning.</td> </tr>
       <tr> <td>10:30</td> <td>Coffee break</td> </tr>
-      <tr> <td>11:00</td> <td>Live coding - condituned</td> </tr>
+      <tr> <td>11:00</td> <td>Live coding - continued</td> </tr>
       <tr> <td>11:30</td> <td>Motivation and demotivation</td> </tr>
       <tr> <td>12:00</td> <td>Lunch break</td> </tr>
       <tr> <td>13:00</td> <td>Overview of Software and Data Carpentry infrastructure</td> </tr>
@@ -133,7 +134,6 @@ prep-repository:  # optional (insert the URL for the repository where the traine
       <tr> <td>15:00</td> <td>Overview of existing materials; how to contribute</td> </tr>
       <tr> <td>16:00</td> <td>Next steps</td> </tr>
       <tr> <td>16:30</td> <td>Close</td> </tr>
-      <tr> <td>17:00</td> <td>Close</td> </tr>
     </table>
   </div>
 </div>
@@ -167,11 +167,12 @@ prep-repository:  # optional (insert the URL for the repository where the traine
 <h2 id="preparation" name="preparation">Preparation</h2>
 <ol>
     <li>
-      Please read
+      Please read:
+      Greg Wilson's <a href="http://arxiv.org/abs/1307.5448">"Software Carpentry: Lessons Learned" </a> <br/>,
       Porter et al's
       <a href="{{site.swc_files}}/training-course/2013/08/p34-porter.pdf">"Success
       in Introductory Programming: What Works?"</a>, which is a good
-      recent summary of results specific to teaching programming, and
+      recent summary of results specific to teaching programming, <br/>and
       Mark Guzdial's
       <a href="http://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext">"Top 10 Myths About Teaching Computer Science"</a>,
       which is a nice overview of things that <em>are not</em> true, but are widely believed.
